@@ -1,0 +1,454 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Fifteen Puzzle - A classic puzzle now in android</title>
+	
+	<meta name="description" content="15 puzzle is an addictive tile based puzzle game developed in 1970 now in android. The aim of the game is to arrange the tiles in their correct numerical order.
+
+
+The source code consists all the files you need. Some of the best features of the source code are
+* JAVA and XML only.
+* Fully equipped with admob banner ads and admob interstitial ads.
+* Full HTML documentation provided.
+* Very Easy to customise themes by changing values of color codes.
+* 5 themes already given
+* Google analytics also included.
+* Customized for tablets also.
+* Support for russian, German and spanish language. ">
+	<meta name="author" content="Created Droids">
+	<meta name="copyright" content="Created Droids">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2014-05-27T10:51:57+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='600',easing='easeInCubic';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#0000FF;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #0088CC #0088CC #bfbfbf;
+		  background-color: #0044CC;
+		}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ul{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ul a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ul a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-fifteen-puzzle">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#getting_started" title="Getting Started">Getting Started</a></li>
+			<li><a href="#importing_code_into_eclipse" title="Importing code into Eclipse">Importing code into Eclipse</a></li>
+			<li><a href="#adding_admob_ads" title="Adding Admob ads">Adding Admob ads</a></li>
+			<li><a href="#integrating_google_analytics" title="Integrating Google Analytics">Integrating Google Analytics</a></li>
+			<li><a href="#removing_errors_if_any" title="Removing Errors(If any)">Removing Errors(If any)</a></li>
+			<li><a href="#changing_app_name" title="Changing App name">Changing App name</a></li>
+			<li><a href="#changing_package_name" title="Changing Package Name">Changing Package Name</a></li>
+			<li><a href="#changing_text_in_game" title="Changing Text in Game">Changing Text in Game</a></li>
+			<li><a href="#changing_color_for_tiles_background_etc" title="Changing Color for Tiles, Background etc..">Changing Color for Tiles, Background etc..</a></li>
+			<li><a href="#changing_graphics" title="Changing Graphics">Changing Graphics</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright Created Droids 2014<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Fifteen Puzzle</h1>
+	<h2>A classic puzzle now in android</h2>
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	
+	
+	<li>by: Created Droids</li>
+	
+	<li>email: <a href="mailto:&#109;&#121;&#110;&#107;&#48;&#49;&#57;&#51;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#109;&#121;&#110;&#107;&#48;&#49;&#57;&#51;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></li>
+	</ul>
+	<p></p>
+	</section>
+	
+	<section id="getting_started">
+	<div class="page-header"><h3>Getting Started</h3><hr class="notop"></div>
+<div class="alert alert-info">
+	To start with the project you have to perform some simple tasks.</div>
+<div class="alert alert-info">
+	1. Import the project into your eclipse IDE.<br>
+	2. Modify admob ads into the project.<br>
+	3. Modify Goolge analytics (to track how your app is doing).<br>
+	4. Changing the basics of project like app name, package name.<br>
+	5. Reskinning the project with changing the graphic content present in the project.<br>
+	6. Deploy in the play store.</div>
+<div class="alert alert-info">
+	Yep thats it . These are the only step you need to worry about . Each step is explained in detail given below.</div>
+</section>
+<section id="importing_code_into_eclipse">
+	<div class="page-header"><h3>Importing code into Eclipse</h3><hr class="notop"></div>
+<div class="alert alert-info" style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	To import the code into your eclipse do the following steps</div>
+<ol style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	<li>
+		<div class="alert alert-info">
+			Click on File</div>
+	</li>
+	<li>
+		<div class="alert alert-info">
+			Select New Project</div>
+	</li>
+	<li>
+		<div class="alert alert-info">
+			Select Android Project</div>
+	</li>
+</ol>
+<div class="alert alert-info" style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	In the dialog, choose the option &quot;<strong>Existing Project</strong>&quot; and put the path to the &nbsp;project root path.<br>
+	<br>
+	Eg - you have put code in C drive then put the path as Local Disk C<br>
+	In the following list you will be shown the list of projects that you can select Then select Fifteenpuzzle.</div>
+</section>
+<section id="adding_admob_ads">
+	<div class="page-header"><h3>Adding Admob ads</h3><hr class="notop"></div>
+<section id="import_google_play_services" style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium;">
+	<div class="alert alert-info" style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+		<strong>Note</strong>&nbsp;- This section is only for users using Google admob ads. If you dont want to use admob then skip this step. However you will be getting some errors due to missing library files. These errors will be removed by removing Adrequest and Adview varaibles.(Just delete the lines causing errors)<br>
+		<br>
+		Another folder for google play services are provided with the code. Just copy the code and paste into the same place where you imported your eclipse project. Normally it is&nbsp;C:\Users\&lt;-- your computer user name--&gt;\workspace<br>
+		<br>
+		To import the services do the following steps</div>
+	<ol style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+		<li>
+			<div class="alert alert-info">
+				Right Click on your project in eclipse project explorer</div>
+		</li>
+		<li>
+			<div class="alert alert-info">
+				Select Properties</div>
+		</li>
+		<li>
+			<div class="alert alert-info">
+				In the dilaog select android</div>
+		</li>
+		<li>
+			<div class="alert alert-info">
+				In the library section select add then select the google play games library</div>
+		</li>
+		<li>
+			<div class="alert alert-info">
+				select Ok.</div>
+		</li>
+	</ol>
+	<div class="alert alert-info" style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+		<strong>Note</strong>&nbsp;- Do change the admob id that you get from admob with the one already given in the code by following steps<br>
+		<br>
+		Open the code in eclipse then go to res--&gt; values ---&gt; strings then you will see a line like given below</div>
+	<pre class="prettyprint lang-js linenums" style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+ &lt;string name=&quot;interstitial_id&quot;&gt;a15305056466330&lt;/string&gt;</pre>
+	<div class="alert alert-info" style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+		Delete&nbsp;<strong>a15305056466330&nbsp;</strong>and add your admob id over here it should look like this</div>
+	<pre class="prettyprint lang-js linenums" style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+ &lt;string name=&quot;interstitial_id&quot;&gt;your_Id&lt;/string&gt;</pre>
+</section>
+<section id="removing_errors_if_any" style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium;">
+	<div class="page-header">
+		<h3>
+			&nbsp;</h3>
+	</div>
+</section>
+<p>
+	&nbsp;</p>
+</section>
+<section id="integrating_google_analytics">
+	<div class="page-header"><h3>Integrating Google Analytics</h3><hr class="notop"></div>
+<div style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium;">
+	To start Using Google Analytics you need to have the following pre-requisites</div>
+<ul style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium;">
+	<li>
+		<div class="alert alert-info">
+			&nbsp;A google analytics Acccount (duhh)</div>
+	</li>
+	<li>
+		<div class="alert alert-info">
+			&nbsp;A tracker Id (Given to you in google analytics).</div>
+	</li>
+</ul>
+<div class="alert alert-info" style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium; background-color: rgb(255, 255, 255);">
+	<span style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">Open the code in eclipse then go to res--&gt; values ---&gt;analytics.xml</span></div>
+<div style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium;">
+	You will see a string like this give below</div>
+<pre class="prettyprint lang-js linenums" style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium; background-color: rgb(255, 255, 255);">
+ &lt;string name=&quot;ga_trackingId&quot;&gt;UA-47805140-1&lt;/string&gt;</pre>
+<div style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium;">
+	Change it to your new tracking id</div>
+<pre class="prettyprint lang-js linenums" style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium; background-color: rgb(255, 255, 255);">
+ &lt;string name=&quot;ga_trackingId&quot;&gt;YOUR-TRACKING-ID&lt;/string&gt;</pre>
+<div class="alert alert-info" style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium; background-color: rgb(255, 255, 255);">
+	&nbsp;</div>
+<div class="alert alert-info" style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium; background-color: rgb(255, 255, 255);">
+	<strong>To obtain Tracking Id</strong></div>
+<div class="alert alert-info" style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium; background-color: rgb(255, 255, 255);">
+	check out the link below&nbsp;<br>
+	<a href="https://support.google.com/analytics/answer/1032385?hl=en">https://support.google.com/analytics/answer/1032385?hl=en</a></div>
+</section>
+<section id="removing_errors_if_any">
+	<div class="page-header"><h3>Removing Errors(If any)</h3><hr class="notop"></div>
+<div class="alert alert-info" style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	If you recieving any errors most likely&nbsp;<strong>R cannot be resolved to a variable</strong>&nbsp;or&nbsp;<strong>android cannot be resolved to any type&nbsp;</strong>then do the folllowing</div>
+<ol style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	<li>
+		<div class="alert alert-info">
+			Right Click on your folder in package explorer in eclipse</div>
+	</li>
+	<li>
+		<div class="alert alert-info">
+			Slect properties</div>
+	</li>
+	<li>
+		<div class="alert alert-info">
+			Then select Android</div>
+	</li>
+	<li>
+		<div class="alert alert-info">
+			Then in the android build target folder select the latest sdk you have.</div>
+	</li>
+	<li>
+		<div class="alert alert-info">
+			Select OK.</div>
+	</li>
+</ol>
+</section>
+<section id="changing_app_name">
+	<div class="page-header"><h3>Changing App name</h3><hr class="notop"></div>
+<p>
+	<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">In eclipse Go to&nbsp;</span><br style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">&nbsp;</span><strong style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">res-&gt;values-&gt;strings</strong><br style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">then you will see a line like this</span></p>
+<pre class="prettyprint lang-js linenums">
+<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">&lt;string name=&quot;app_name&quot;&gt;15 puzzle&lt;/string&gt;</span></pre>
+<p>
+	<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">change this to&nbsp;</span></p>
+<pre class="prettyprint lang-js linenums">
+<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">&lt;string name=&quot;app_name&quot;&gt;YOUR_NAME&lt;/string&gt;</span></pre>
+<p>
+	<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">Note - since this app provides suport for russian, spanish and German language. Do make the following changes to their respective folders also</span></p>
+<h1 class="alert alert-info" style="font-family: 'Times New Roman';">
+	<font color="#585858" size="3">For Russian</font></h1>
+<div class="alert alert-info" style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium; background-color: rgb(255, 255, 255);">
+	<span style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">In eclipse Go to&nbsp;</span><br style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	<span style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">&nbsp;</span><strong style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">res -&gt;values-ru -&gt;strings</strong><br style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	<span style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">then you will see a line like this</span></div>
+<pre class="prettyprint lang-js linenums" style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium; background-color: rgb(255, 255, 255);">
+<span style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">&lt;string name=&quot;app_name&quot;&gt;</span>15-головоломка<span style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">&lt;/string&gt;</span></pre>
+<div class="alert alert-info" style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium; background-color: rgb(255, 255, 255);">
+	<span style="background-color: rgb(243, 243, 243); color: rgb(88, 88, 88);">change this to&nbsp;</span></div>
+<pre class="prettyprint lang-js linenums" style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium; background-color: rgb(255, 255, 255);">
+<span style="background-color: rgb(243, 243, 243); color: rgb(88, 88, 88);">&lt;string name=&quot;app_name&quot;&gt;YOUR_NAME&lt;/string&gt;</span></pre>
+<h1 class="alert alert-info" style="color: rgb(56, 56, 56); font-family: 'Times New Roman';">
+	<span style="background-color: rgb(243, 243, 243); color: rgb(88, 88, 88); font-size: medium;">For spanish</span></h1>
+<div class="alert alert-info" style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium; background-color: rgb(255, 255, 255);">
+	<span style="background-color: rgb(243, 243, 243); color: rgb(88, 88, 88);">In eclipse Go to&nbsp;</span></div>
+<div class="alert alert-info" style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium; background-color: rgb(255, 255, 255);">
+	<span style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">&nbsp;</span><strong style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">res -&gt;values-es -&gt;strings</strong><br style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	<span style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">then you will see a line like this</span></div>
+<pre class="prettyprint lang-js linenums" style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium; background-color: rgb(255, 255, 255);">
+<span style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">&lt;string name=&quot;app_name&quot;&gt;</span>15 rompecabezas<span style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">&lt;/string&gt;</span></pre>
+<div class="alert alert-info" style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium; background-color: rgb(255, 255, 255);">
+	<span style="background-color: rgb(243, 243, 243); color: rgb(88, 88, 88);">change this to&nbsp;</span></div>
+<pre class="prettyprint lang-js linenums" style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium; background-color: rgb(255, 255, 255);">
+<span style="background-color: rgb(243, 243, 243); color: rgb(88, 88, 88);">&lt;string name=&quot;app_name&quot;&gt;YOUR_NAME&lt;/string&gt;</span></pre>
+<h1 class="alert alert-info" style="color: rgb(56, 56, 56); font-family: 'Times New Roman';">
+	<span style="background-color: rgb(243, 243, 243); color: rgb(88, 88, 88); font-size: medium;">For German</span></h1>
+<div class="alert alert-info" style="background-color: rgb(255, 255, 255); color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium;">
+	<span style="background-color: rgb(243, 243, 243); color: rgb(88, 88, 88);">In eclipse Go to&nbsp;</span></div>
+<div class="alert alert-info" style="background-color: rgb(255, 255, 255); color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium;">
+	<span style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">&nbsp;</span><strong style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">res -&gt;values-de -&gt;strings</strong><br style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	<span style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">then you will see a line like this</span></div>
+<pre class="prettyprint lang-js linenums" style="background-color: rgb(255, 255, 255); color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium;">
+<span style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">&lt;string name=&quot;app_name&quot;&gt;</span>15 puzzle<span style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">&lt;/string&gt;</span></pre>
+<div class="alert alert-info" style="background-color: rgb(255, 255, 255); color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium;">
+	<span style="background-color: rgb(243, 243, 243); color: rgb(88, 88, 88);">change this to&nbsp;</span></div>
+<pre class="prettyprint lang-js linenums" style="background-color: rgb(255, 255, 255); color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium;">
+<span style="background-color: rgb(243, 243, 243); color: rgb(88, 88, 88);">&lt;string name=&quot;app_name&quot;&gt;YOUR_NAME&lt;/string&gt;</span></pre>
+</section>
+<section id="changing_package_name">
+	<div class="page-header"><h3>Changing Package Name</h3><hr class="notop"></div>
+<p>
+	<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">To change package name&nbsp;</span><br style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">Right click on your project in eclipse, scroll down to Android Tools, and then click on Rename Application Package.</span><br style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	<br style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">Enter your name and hit Ok</span></p>
+</section>
+<section id="changing_text_in_game">
+	<div class="page-header"><h3>Changing Text in Game</h3><hr class="notop"></div>
+<p>
+	To change the text present in game do the following steps</p>
+<p>
+	<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">In eclipse Go to&nbsp;</span><br style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">&nbsp;</span><strong style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">res-&gt;values-&gt;strings</strong></p>
+<p>
+	<span style="background-color: rgb(243, 243, 243); color: rgb(88, 88, 88); font-family: 'Times New Roman'; font-size: medium;">there you will see lines like these</span></p>
+<pre class="prettyprint lang-js linenums">
+    &lt;string name=&quot;dialogTitle&quot;&gt;Resume Game&lt;/string&gt;
+
+    &lt;string name=&quot;yes&quot;&gt;Yes&lt;/string&gt;
+
+    &lt;string name=&quot;no&quot;&gt;No&lt;/string&gt;</pre>
+<p>
+	and many other lines</p>
+<div>
+	&nbsp;</div>
+<div>
+	All the code is properly formatted with instruction about which screen these strings will show<br>
+	To change them to your values just change the content in it.</div>
+<div>
+	&nbsp;</div>
+<div class="alert alert-info">
+	Example -&nbsp;</div>
+<pre class="prettyprint lang-plain linenums">
+Before changing - </pre>
+<pre class="prettyprint lang-plain linenums">
+&lt;string name=&quot;dialogTitle&quot;&gt;<strong>Resume Game</strong>&lt;/string&gt;
+
+After changing - </pre>
+<pre class="prettyprint lang-js linenums">
+&lt;string name=&quot;dialogTitle&quot;&gt;<strong>Your Text Here</strong>&lt;/string&gt;</pre>
+</section>
+<section id="changing_color_for_tiles_background_etc">
+	<div class="page-header"><h3>Changing Color for Tiles, Background etc..</h3><hr class="notop"></div>
+<div class="alert alert-info" style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium; background-color: rgb(255, 255, 255);">
+	<span style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">Open the code in eclipse then go to project directory then res--&gt; values ---&gt; colors then you will see a lines like given below</span></div>
+<pre class="prettyprint lang-js linenums" style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium; background-color: rgb(255, 255, 255);">
+    &lt;color name=&quot;grey&quot;&gt;#cdcccc&lt;/color&gt;
+
+    &lt;color name=&quot;light_green&quot;&gt;#d1feca&lt;/color&gt;
+
+    &lt;color name=&quot;red&quot;&gt;#e93030&lt;/color&gt;
+
+    &lt;color name=&quot;blue&quot;&gt;#0207eb&lt;/color&gt;
+
+    &lt;color name=&quot;purple&quot;&gt;#8c00dd&lt;/color&gt;
+
+    &lt;color name=&quot;green&quot;&gt;#01cc6e&lt;/color&gt;
+
+    &lt;color name=&quot;light_pink&quot;&gt;#fdcdee&lt;/color&gt;
+
+    &lt;color name=&quot;brown&quot;&gt;#754c24&lt;/color&gt;
+
+    &lt;color name=&quot;pink&quot;&gt;#fb4ec4&lt;/color&gt;
+
+    &lt;color name=&quot;white&quot;&gt;#ffffff&lt;/color&gt;
+
+    &lt;color name=&quot;light_blue&quot;&gt;#d8f4ff&lt;/color&gt;</pre>
+<div class="alert alert-info" style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium; background-color: rgb(255, 255, 255);">
+	&nbsp;</div>
+<div class="alert alert-info" style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium; background-color: rgb(255, 255, 255);">
+	&nbsp;</div>
+<div style="color: rgb(56, 56, 56); font-family: 'Times New Roman'; font-size: medium;">
+	<div>
+		just change the values of the required field with the one you want<br style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+		<br style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+		<span style="color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">Eg - Tiles in theme 1 consists of colors red for the board, blue for tile outer part, red/grey for inner circle of tile depending whther it is on its correct position or not. To change these do the following</span></div>
+	<pre class="prettyprint lang-js linenums">
+&lt;color name=&quot;grey&quot;&gt;#cdcccc&lt;/color&gt;
+
+&lt;color name=&quot;red&quot;&gt;#e93030&lt;/color&gt;
+
+&lt;color name=&quot;blue&quot;&gt;#0207eb&lt;/color&gt;
+</pre>
+	<div>
+		To</div>
+	<pre class="prettyprint lang-js linenums">
+&lt;color name=&quot;grey&quot;&gt;YOUR COLOR CODE&lt;/color&gt;
+
+&lt;color name=&quot;red&quot;&gt;YOUR COLOR CODE&lt;/color&gt;
+
+&lt;color name=&quot;blue&quot;&gt;YOUR COLOR CODE&lt;/color&gt;</pre>
+</div>
+<p>
+	&nbsp;</p>
+</section>
+<section id="changing_graphics">
+	<div class="page-header"><h3>Changing Graphics</h3><hr class="notop"></div>
+<p>
+	<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">To change graphic images Go to your project folder -&gt; res</span><br style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">you will see folders like</span><br style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">drawable-mdpi</span><br style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">drawable-ldpi</span><br style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">drawable-hdpi</span><br style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">drawable-xhdpi</span><br style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">drawable-xxhdpi</span><br style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">drawable-large-hdpi</span><br style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">drabwale-xlarge-mdpi</span><br style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	<br style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">Thes folders contain graphics that are used in the game for different types of devices</span><br style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">Just change the images to your images and&nbsp;</span><strong style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">DO NOT RENAME YOUR NEW IMAGE TO A DIFFERENT NAME</strong></p>
+<p>
+	<br>
+	<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">Eg - if your are changing an image theme_1.png</span><br style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+	<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">then replace it with another image with the name as theme_1.png</span></p>
+<div class="alert alert-info">
+	<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);"><strong>Devices with their notations&nbsp;</strong></span></div>
+<pre class="prettyprint lang-plain linenums">
+<span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">ldpi - devices with resolution 240x320.
+mdpi - devices with resolution 320x480.
+hdpi - devices with resolution 480x800.
+xhdpi - devices with resolution 720x1280.
+xxhdpi - deives with resolution 1080x1920.
+large-hdpi - for tablets like nexus 7.
+</span><span style="color: rgb(88, 88, 88); font-family: 'Times New Roman'; font-size: medium; background-color: rgb(243, 243, 243);">xlarge-mdpi - for tablets like nexus 10.</span><span style="font-family: 'Times New Roman'; font-size: medium; color: rgb(88, 88, 88); background-color: rgb(243, 243, 243);">
+</span></pre>
+</section>
+
+	</div>
+</body>
+</html>
